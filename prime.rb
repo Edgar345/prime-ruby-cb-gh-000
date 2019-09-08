@@ -1,12 +1,9 @@
 # Add  code here!
 def prime? integer
-  return false if integer == 1 || integer < 0
-  return true if [2,3,5,7].include? integer
-  nums = (2..9).to_a
+  return if integer <= 1
 
-  nums.each do |num|
-    puts num
-    if num != integer && integer % num == 0
+  (2..integer-1).to_a().each do |num|
+    if integer % num == 0
       return false
     end
   end
