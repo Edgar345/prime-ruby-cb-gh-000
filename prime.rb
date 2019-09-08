@@ -2,9 +2,11 @@
 def prime? integer
   nums = (2..9).to_a
 
-  nums.all do |num|
+  nums.each do |num|
     puts num
-    num != integer && integer % num == 0
+    if num != integer && integer % num == 0
+      return false
+    end
   end
 end
 
