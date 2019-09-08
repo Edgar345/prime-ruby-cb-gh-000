@@ -1,6 +1,6 @@
 # Add  code here!
 def prime? integer
-  return if integer < 2
+  return false if integer < 2
 
   (2..integer-1).to_a().each do |num|
     if integer % num == 0
