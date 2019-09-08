@@ -1,5 +1,6 @@
 # Add  code here!
 def prime? integer
+  return true if [2,3,5,7].include? integer
   nums = (2..9).to_a
 
   nums.each do |num|
@@ -8,6 +9,7 @@ def prime? integer
       return false
     end
   end
+  return true
 end
 
 #11 => true
