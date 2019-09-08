@@ -1,5 +1,6 @@
 # Add  code here!
 def prime? integer
+  return false if integer == 1
   return true if [2,3,5,7].include? integer
   nums = (2..9).to_a
 
